@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 import { navItems } from './_nav';
@@ -7,12 +7,13 @@ import { navItems } from './_nav';
   selector: 'jhi-main',
   templateUrl: './main.component.html'
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
 
-  title = 'hellos  pinky !'
-  constructor() {}
-  ngOnInit(): void {
-    // ...
+  public sidebarMinimized = false;
+  public navItems = navItems;
+
+  toggleMinimize(e:any) {
+    this.sidebarMinimized = e as boolean;
   }
 }
 
