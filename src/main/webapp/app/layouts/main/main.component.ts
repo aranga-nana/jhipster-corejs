@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+import { navItems } from './_nav';
 
 @Component({
   selector: 'jhi-main',

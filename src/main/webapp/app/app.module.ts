@@ -12,7 +12,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
-
+import {AppRoutingModule} from './app.routing';
 import {
   AppAsideModule,
   AppBreadcrumbModule,
@@ -24,10 +24,11 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
-   // AppRoutingModule,
+    AppRoutingModule,
     AppAsideModule,
     AppBreadcrumbModule.forRoot(),
     AppFooterModule,
