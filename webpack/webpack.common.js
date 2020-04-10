@@ -22,6 +22,13 @@ module.exports = (options) => ({
                 test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
                 loader: '@ngtools/webpack'
             },
+          {
+            test: /\.css$/,
+            use: [
+              'style-loader',
+              'css-loader'
+            ]
+          },
             {
                 test: /\.html$/,
                 loader: 'html-loader',
